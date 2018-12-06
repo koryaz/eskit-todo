@@ -1,0 +1,3 @@
+package: github.com/koryaz/eskit-todo
+import:
+- package: github.com/makkalot/eskit

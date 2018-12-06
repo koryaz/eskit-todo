@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package contracts.todos;
+option go_package = "github.com/koryaz/eskit-todo/generated/grpc/go/todos";
+
+import "common/originator.proto";
+
+message Todo {
+    contracts.common.Originator originator = 1;
+    string Title = 2;
+    string Url = 3;
+    bool Completed = 4;
+    string Order = 5;
+    string Text = 6;
+}

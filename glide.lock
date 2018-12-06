@@ -1,0 +1,214 @@
+hash: eddc7292af50c599150fc3cae05fab9486ad8867c45dec25ffccf55bff463adf
+updated: 2018-12-04T12:03:59.700233202+01:00
+imports:
+- name: github.com/asaskevich/govalidator
+  version: f9ffefc3facfbe0caee3fea233cbb6e8208f4541
+- name: github.com/beorn7/perks
+  version: 3a771d992973f24aa725d07868b467d1ddfceafb
+  subpackages:
+  - quantile
+- name: github.com/cenkalti/backoff
+  version: 62661b46c4093e2c1f38d943e663db1a29873e80
+- name: github.com/fsnotify/fsnotify
+  version: ccc981bf80385c528a65fbfdd49bf2d8da22aa23
+- name: github.com/globalsign/mgo
+  version: eeefdecb41b842af6dc652aaea4026e8403e62df
+  subpackages:
+  - bson
+  - internal/json
+- name: github.com/go-openapi/analysis
+  version: e2f3fdbb7ed0e56e070ccbfb6fc75b288a33c014
+  subpackages:
+  - internal
+- name: github.com/go-openapi/errors
+  version: 7a7ff1b7b8020f22574411a32f28b4d168d69237
+- name: github.com/go-openapi/jsonpointer
+  version: ef5f0afec364d3b9396b7b77b43dbe26bf1f8004
+- name: github.com/go-openapi/jsonreference
+  version: 8483a886a90412cd6858df4ea3483dce9c8e35a3
+- name: github.com/go-openapi/loads
+  version: 74628589c3b94e3526a842d24f46589980f5ab22
+- name: github.com/go-openapi/runtime
+  version: aadb2cc7b8862fdab251bf60a8b9d2a951c9746c
+  subpackages:
+  - client
+  - logger
+  - middleware
+  - middleware/denco
+  - middleware/header
+  - middleware/untyped
+  - security
+- name: github.com/go-openapi/spec
+  version: 5b6cdde3200976e3ecceb2868706ee39b6aff3e4
+- name: github.com/go-openapi/strfmt
+  version: e471370ae57ac74eaf0afe816a66e4ddd7f1b027
+- name: github.com/go-openapi/swag
+  version: 1d29f06aebd59ccdf11ae04aa0334ded96e2d909
+- name: github.com/go-openapi/validate
+  version: d2eab7d93009e9215fc85b2faa2c2f2a98c2af48
+- name: github.com/go-ozzo/ozzo-validation
+  version: 2f76ea62300c36e72bd56c804484cb6db53b69a5
+- name: github.com/golang/protobuf
+  version: 1d3f30b51784bec5aad268e59fd3c2fc1c2fe73f
+  subpackages:
+  - jsonpb
+  - proto
+  - protoc-gen-go/descriptor
+  - protoc-gen-go/generator
+  - protoc-gen-go/generator/internal/remap
+  - protoc-gen-go/plugin
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/struct
+  - ptypes/timestamp
+  - ptypes/wrappers
+- name: github.com/grpc-ecosystem/grpc-gateway
+  version: d8ad87ee91e1062c2a6117bda0b5523e9cb949ef
+  subpackages:
+  - runtime
+  - runtime/internal
+  - utilities
+- name: github.com/hashicorp/hcl
+  version: 65a6292f0157eff210d03ed1bf6c59b190b8b906
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/printer
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/magiconair/properties
+  version: 7c38529aac7222391b7a2661365177a97e21b998
+- name: github.com/mailru/easyjson
+  version: 60711f1a8329503b04e1c88535f419d0bb440bff
+  subpackages:
+  - buffer
+  - jlexer
+  - jwriter
+- name: github.com/makkalot/eskit
+  version: 208a25bbc4ba5a6f3db4da8892aa39aa3b618714
+  subpackages:
+  - generated/grpc/go/common
+  - generated/grpc/go/consumerstore
+  - generated/grpc/go/crudstore
+  - generated/grpc/go/eventstore
+  - services/clients
+  - services/common
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+  subpackages:
+  - pbutil
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/pelletier/go-toml
+  version: 27c6b39a135b7dc87a14afb068809132fb7a9a8f
+- name: github.com/prometheus/client_golang
+  version: 32b1bb4674c4db541df5b547bb1a325337522022
+  subpackages:
+  - prometheus
+  - prometheus/internal
+  - prometheus/promhttp
+- name: github.com/prometheus/client_model
+  version: 5c3871d89910bfb32f5fcab2aa4b9ec68e65a99f
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: 4724e9255275ce38f7179b2478abeae4e28c904f
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- name: github.com/prometheus/procfs
+  version: aa55a523dc0a8297edf51bb75e8eec13eb3be45d
+  subpackages:
+  - internal/util
+  - nfs
+  - xfs
+- name: github.com/PuerkitoBio/purell
+  version: 975f53781597ed779763b7b65566e74c4004d8de
+- name: github.com/PuerkitoBio/urlesc
+  version: de5bf2ad457846296e2031421a34e2568e304e35
+- name: github.com/satori/go.uuid
+  version: b2ce2384e17bbe0c6d34077efa39dbab3e09123b
+- name: github.com/spf13/afero
+  version: d40851caa0d747393da1ffb28f7f9d8b4eeffebd
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: 8c9545af88b134710ab1cd196795e7f2388358d7
+- name: github.com/spf13/jwalterweatherman
+  version: 94f6ae3ed3bceceafa716478c5fbf8d29ca601a1
+- name: github.com/spf13/pflag
+  version: aea12ed6721610dc6ed40141676d7ab0a1dac9e9
+- name: github.com/spf13/viper
+  version: 06c7c0d9b3c7cfca13deff6e353a052e08828ad4
+- name: golang.org/x/net
+  version: 351d144fa1fc0bd934e2408202be0c29f25e35a0
+  subpackages:
+  - context
+  - http/httpguts
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - trace
+- name: golang.org/x/sys
+  version: 4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: 6f44c5a2ea40ee3593d98cdcc905cc1fdaa660e2
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+  - width
+- name: google.golang.org/genproto
+  version: bd91e49a0898e27abb88c339b432fa53d7497ac0
+  subpackages:
+  - googleapis/api/annotations
+  - googleapis/rpc/status
+  - protobuf/field_mask
+- name: google.golang.org/grpc
+  version: ca62c6b92c334f52c7e48b7cbf624f3b877fb092
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - binarylog/grpc_binarylog_v1
+  - codes
+  - connectivity
+  - credentials
+  - credentials/internal
+  - encoding
+  - encoding/proto
+  - grpclog
+  - internal
+  - internal/backoff
+  - internal/binarylog
+  - internal/channelz
+  - internal/envconfig
+  - internal/grpcrand
+  - internal/grpcsync
+  - internal/syscall
+  - internal/transport
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - reflection
+  - reflection/grpc_reflection_v1alpha
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+- name: gopkg.in/yaml.v2
+  version: 51d6538a90f86fe93ac480b35f37b2be17fef232
+testImports: []

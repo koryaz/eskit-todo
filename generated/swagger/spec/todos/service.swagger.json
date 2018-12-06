@@ -1,0 +1,120 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "todos/service.proto",
+    "version": "version not set"
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/healtz": {
+      "get": {
+        "operationId": "Healtz",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/todosHealthResponse"
+            }
+          }
+        },
+        "tags": [
+          "TodoService"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "commonOriginator": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "todosCreateResponse": {
+      "type": "object",
+      "properties": {
+        "todo": {
+          "$ref": "#/definitions/todosTodo"
+        }
+      }
+    },
+    "todosDeleteAllResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "todosDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "originator": {
+          "$ref": "#/definitions/commonOriginator"
+        }
+      }
+    },
+    "todosFindResponse": {
+      "type": "object",
+      "properties": {
+        "todo": {
+          "$ref": "#/definitions/todosTodo"
+        }
+      }
+    },
+    "todosHealthResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "todosTodo": {
+      "type": "object",
+      "properties": {
+        "originator": {
+          "$ref": "#/definitions/commonOriginator"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Url": {
+          "type": "string"
+        },
+        "Completed": {
+          "type": "boolean",
+          "format": "boolean"
+        },
+        "Order": {
+          "type": "string"
+        },
+        "Text": {
+          "type": "string"
+        }
+      }
+    },
+    "todosUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "todo": {
+          "$ref": "#/definitions/todosTodo"
+        }
+      }
+    }
+  }
+}

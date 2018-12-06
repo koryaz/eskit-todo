@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package contracts.todos;
+option go_package = "github.com/koryaz/eskit-todo/generated/grpc/go/todos";
+
+import "todos/todo.proto";
+import "common/originator.proto";
+import "google/api/annotations.proto";
+
+
+message CreateRequest {
+    string url = 1;
+    string title = 2;
+    string text = 3;
+}
+
+message CreateResponse {
+    Todo todo = 1;
+}
+
+message FindRequest {
+    contracts.common.Originator originator = 1;
+}
+
+message FindResponse {
+    Todo todo = 1;
+}
+
+message UpdateRequest {
+    // version bit for the update requests are required
+    contracts.common.Originator originator = 1;
+    Todo updatedTodo = 2;
+}
+
+message UpdateResponse {
+    Todo todo = 1;
+}
+
+message DeleteRequest {
+    contracts.common.Originator originator = 1;
+}
+
+message DeleteResponse {
+    contracts.common.Originator originator = 1;
+}
+
+message DeleteAllRequest {
+}
+
+message DeleteAllResponse {
+    string message = 1;
+}
+
+message HealthRequest {
+}
+
+message HealthResponse {
+    string message = 1;
+}
+
+
+service TodoService {
+
+    rpc Healtz (HealthRequest) returns (HealthResponse) {
+        option (google.api.http) = {
+            get: "/v1/healtz"
+        };
+    }
+
+    rpc Create(CreateRequest) returns (CreateResponse){}
+
+    rpc Find(FindRequest) returns (FindResponse){}
+
+    rpc Update(UpdateRequest) returns (UpdateResponse){}
+
+    rpc Delete(DeleteRequest) returns (DeleteResponse){}
+
+    rpc DeleteAll(DeleteAllRequest) returns (DeleteAllResponse){}
+}
