@@ -1,5 +1,5 @@
 hash: eddc7292af50c599150fc3cae05fab9486ad8867c45dec25ffccf55bff463adf
-updated: 2018-12-04T12:03:59.700233202+01:00
+updated: 2018-12-06T09:04:14.843918302+01:00
 imports:
 - name: github.com/asaskevich/govalidator
   version: f9ffefc3facfbe0caee3fea233cbb6e8208f4541
@@ -64,7 +64,7 @@ imports:
   - ptypes/timestamp
   - ptypes/wrappers
 - name: github.com/grpc-ecosystem/grpc-gateway
-  version: d8ad87ee91e1062c2a6117bda0b5523e9cb949ef
+  version: 7ad920cb70af14a60b14add071a4605a0655ea6e
   subpackages:
   - runtime
   - runtime/internal
@@ -107,7 +107,7 @@ imports:
 - name: github.com/pelletier/go-toml
   version: 27c6b39a135b7dc87a14afb068809132fb7a9a8f
 - name: github.com/prometheus/client_golang
-  version: 32b1bb4674c4db541df5b547bb1a325337522022
+  version: 2df5ba38effb22ad83b864fe465be6329c128e23
   subpackages:
   - prometheus
   - prometheus/internal
@@ -123,7 +123,7 @@ imports:
   - internal/bitbucket.org/ww/goautoneg
   - model
 - name: github.com/prometheus/procfs
-  version: aa55a523dc0a8297edf51bb75e8eec13eb3be45d
+  version: 1dc9a6cbc91aacc3e8b2d63db4d2e957a5394ac4
   subpackages:
   - internal/util
   - nfs
@@ -145,7 +145,7 @@ imports:
 - name: github.com/spf13/pflag
   version: aea12ed6721610dc6ed40141676d7ab0a1dac9e9
 - name: github.com/spf13/viper
-  version: 06c7c0d9b3c7cfca13deff6e353a052e08828ad4
+  version: 41cd1c3aa32b2685fae6c296e6f044bc68922c0e
 - name: golang.org/x/net
   version: 351d144fa1fc0bd934e2408202be0c29f25e35a0
   subpackages:
@@ -157,7 +157,7 @@ imports:
   - internal/timeseries
   - trace
 - name: golang.org/x/sys
-  version: 4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31
+  version: 70b957f3b65e069b4930ea94e2721eefa0f8f695
   subpackages:
   - unix
 - name: golang.org/x/text
@@ -175,7 +175,7 @@ imports:
   - googleapis/rpc/status
   - protobuf/field_mask
 - name: google.golang.org/grpc
-  version: ca62c6b92c334f52c7e48b7cbf624f3b877fb092
+  version: 272e9d4fbde8a0a44d24291bac0182ea4e33d403
   subpackages:
   - balancer
   - balancer/base

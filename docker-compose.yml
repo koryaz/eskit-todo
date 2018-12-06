@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: docker/Dockerfile.golang
     volumes:
-      - ".:/go/src/github.com/makkalot/eskit"
-    working_dir: "/go/src/github.com/makkalot/eskit"
+      - ".:/go/src/github.com/koryaz/eskit-todo"
+    working_dir: "/go/src/github.com/koryaz/eskit-todo"
     command: "make build-go"
 
   db:

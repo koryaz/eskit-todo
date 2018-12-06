@@ -94,7 +94,6 @@ deps-go:
 
 .PHONY: build-compose-go
 build-compose-go:
-	echo $(GOPATH)
 	$(COMMON_SH) source ./scripts/compose.sh && compose_build $(CI_JOB_ID)
 
 .PHONY: build-go
@@ -104,8 +103,6 @@ $(GO_BUILD_TARGETS): build-deps-go
 	mkdir -p ./bin
 	SERVICE_NAME=$(shell basename $@) && \
 	SERVICE_PATH=$(shell echo $@ | cut -c6-) && \
-	export GOPATH=/home && \
-	echo $(GOPATH) && \
 	env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ./bin/$$SERVICE_NAME ./services/$$SERVICE_PATH
 
 .PHONY: build-deps-go
