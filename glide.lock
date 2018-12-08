@@ -1,5 +1,5 @@
 hash: eddc7292af50c599150fc3cae05fab9486ad8867c45dec25ffccf55bff463adf
-updated: 2018-12-06T09:04:14.843918302+01:00
+updated: 2018-12-08T20:21:31.426727946+01:00
 imports:
 - name: github.com/asaskevich/govalidator
   version: f9ffefc3facfbe0caee3fea233cbb6e8208f4541
@@ -29,7 +29,7 @@ imports:
 - name: github.com/go-openapi/loads
   version: 74628589c3b94e3526a842d24f46589980f5ab22
 - name: github.com/go-openapi/runtime
-  version: aadb2cc7b8862fdab251bf60a8b9d2a951c9746c
+  version: 41e24cc66d7af6af39eb9b5a6418e901bcdd333c
   subpackages:
   - client
   - logger
@@ -64,7 +64,7 @@ imports:
   - ptypes/timestamp
   - ptypes/wrappers
 - name: github.com/grpc-ecosystem/grpc-gateway
-  version: 7ad920cb70af14a60b14add071a4605a0655ea6e
+  version: 5b7aa478a4868c90f73159b3db1d0f4432132a03
   subpackages:
   - runtime
   - runtime/internal
@@ -107,7 +107,7 @@ imports:
 - name: github.com/pelletier/go-toml
   version: 27c6b39a135b7dc87a14afb068809132fb7a9a8f
 - name: github.com/prometheus/client_golang
-  version: 2df5ba38effb22ad83b864fe465be6329c128e23
+  version: 505eaef017263e299324067d40ca2c48f6a2cf50
   subpackages:
   - prometheus
   - prometheus/internal
@@ -145,9 +145,9 @@ imports:
 - name: github.com/spf13/pflag
   version: aea12ed6721610dc6ed40141676d7ab0a1dac9e9
 - name: github.com/spf13/viper
-  version: 41cd1c3aa32b2685fae6c296e6f044bc68922c0e
+  version: 6d33b5a963d922d182c91e8a1c88d81fd150cfd4
 - name: golang.org/x/net
-  version: 351d144fa1fc0bd934e2408202be0c29f25e35a0
+  version: 610586996380ceef02dd726cc09df7e00a3f8e56
   subpackages:
   - context
   - http/httpguts
@@ -157,7 +157,7 @@ imports:
   - internal/timeseries
   - trace
 - name: golang.org/x/sys
-  version: 70b957f3b65e069b4930ea94e2721eefa0f8f695
+  version: ad97f365e15054527b467150f898ec66d7f81e14
   subpackages:
   - unix
 - name: golang.org/x/text
@@ -175,7 +175,7 @@ imports:
   - googleapis/rpc/status
   - protobuf/field_mask
 - name: google.golang.org/grpc
-  version: 272e9d4fbde8a0a44d24291bac0182ea4e33d403
+  version: 4be7750b61b1108880b7ff3ff69c7214a8a0fe01
   subpackages:
   - balancer
   - balancer/base

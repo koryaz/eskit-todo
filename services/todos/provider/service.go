@@ -12,6 +12,8 @@ import (
 
 	"github.com/makkalot/eskit/generated/grpc/go/crudstore"
 	common2 "github.com/makkalot/eskit/services/common"
+	uuid "github.com/satori/go.uuid"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
