@@ -9,6 +9,7 @@ require (
 	github.com/go-ozzo/ozzo-validation v3.5.0+incompatible
 	github.com/golang/protobuf v1.2.0
 	github.com/google/uuid v1.1.0 // indirect
+	github.com/grpc-ecosystem/go-grpc-prometheus v0.0.0-20180820150422-93bf4626fba7
 	github.com/grpc-ecosystem/grpc-gateway v0.0.0-20181208002258-5b7aa478a486
 	github.com/makkalot/eskit v0.0.0-20181117061931-208a25bbc4ba
 	github.com/prometheus/client_golang v0.9.2

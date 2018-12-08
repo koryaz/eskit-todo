@@ -12,6 +12,7 @@ import (
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+	"github.com/grpc-ecosystem/go-grpc-prometheus"
 )
 
 type TodoStoreConfig struct {

@@ -14,7 +14,7 @@ COMPOSE=docker-compose -p $(CI_JOB_ID)
 COMMON_SH=source ./scripts/common.sh &&
 GINKGO_FOCUS?=integration
 
-#HELM_IMAGE_NAME=$(REPOSITORY_NAME)/eskit-helm:latest
+HELM_IMAGE_NAME=$(REPOSITORY_NAME)/eskit-todo-helm:latest
 
 #KUBECONFIG_DIR=/tmp/kube
 #KUBECONFIG_PATH=/tmp/kube/config
@@ -39,24 +39,13 @@ GRPC_CONTRACTS += todos
 GRPC_TARGETS = $(addprefix generated/grpc/go/, $(GRPC_CONTRACTS))
 
 GRPC_PYTHON_CONTRACTS =
-GRPC_PYTHON_CONTRACTS += common
-GRPC_PYTHON_CONTRACTS += eventstore
-GRPC_PYTHON_CONTRACTS += crudstore
-GRPC_PYTHON_CONTRACTS += consumerstore
-GRPC_PYTHON_CONTRACTS += users
+#GRPC_PYTHON_CONTRACTS += todos
 GRPC_PYTHON_TARGETS = $(addprefix pyservices/generated/, $(GRPC_PYTHON_CONTRACTS))
 
 DEPLOY_TARGETS =
-DEPLOY_TARGETS += eventstore
-DEPLOY_TARGETS += consumers/metrics
-DEPLOY_TARGETS += crudstore
-DEPLOY_TARGETS += consumerstore
 DEPLOY_TARGETS += todos
 
 K8S_SERVICES =
-K8S_SERVICES += eventstore
-K8S_SERVICES += crudstore
-K8S_SERVICES += consumerstore
 K8S_SERVICES += todos
 
 
